@@ -1,0 +1,5 @@
+ListenAddr: "127.0.0.1:8080"
+ReadTimeout: 30
+ReadHeaderTimeout: 5
+WriteTimeout: 10
+IdleTimeout: 60

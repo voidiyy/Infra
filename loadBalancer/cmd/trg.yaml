@@ -1,0 +1,16 @@
+- name: "API group"
+  handlePath: "/api"
+  balanceStrategy: "roundRobin"
+  targets:
+    urls:
+      - "http://localhost:5000/api"
+      - "http://localhost:5001/api"
+      - "http://localhost:5002/api"
+
+- name: "GRPC group"
+  handlePath: "/grpc"
+  balanceStrategy: "roundRobin"
+  targets:
+    urls:
+      - "http://localhost:6000/grpc"
+      - "http://localhost:6001/grpc"
